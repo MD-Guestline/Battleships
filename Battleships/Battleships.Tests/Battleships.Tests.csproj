@@ -14,15 +14,19 @@
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
+    <PackageReference Include="Moq" Version="4.18.4" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Model\" />
     <None Remove="Model\ShipTests\" />
+    <None Remove="Model\GridSquareTests\" />
+    <None Remove="Moq" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Model\ShipTests\" />
+    <Folder Include="Model\GridSquareTests\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Battleships\Battleships.csproj" />
