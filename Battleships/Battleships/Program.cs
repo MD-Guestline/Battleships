@@ -1,9 +1,10 @@
-﻿namespace Battleships;
-class Program
+﻿namespace Battleships
 {
-    static void Main(string[] args)
+    public class Program
     {
-        Console.WriteLine("Hello, World!");
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
     }
 }
-

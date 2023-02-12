@@ -1,18 +1,14 @@
-﻿using System;
-namespace Battleships.Model
+﻿namespace Battleships.Model
 {
 	public class Ship : IShip
 	{
+		public int Size { get; private set; }
 		public int Health { get; private set; }
 
-		public Ship(int size)
+		public Ship(ShipSize size)
 		{
-			if (size < 1)
-			{
-				throw new ArgumentOutOfRangeException(nameof(size), "Ship size must be 1 or more.");
-			}
-
-			Health = size;
+			Size = (int)size;
+			Health = (int)size;
 		}
 
 		public void Hit()
@@ -31,4 +27,3 @@ namespace Battleships.Model
 		}
 	}
 }
-

@@ -1,30 +1,20 @@
-﻿using System;
-using Battleships.Model;
+﻿using Battleships.Model;
 
 namespace Battleships.Tests.Model.ShipTests
 {
+    [TestFixture]
 	public class Ctor
 	{
-		[TestCase(0)]
-		[TestCase(-1)]
-		public void Constructor_SizeIsLessThanOne_ThrowsArgumentOutOfRangeException(int size)
-		{
-			void result() => new Ship(size);
-
-			Assert.That(result, Throws.InstanceOf<ArgumentOutOfRangeException>());
-		}
-
-        [TestCase(1)]
-        [TestCase(2)]
-        [TestCase(3)]
-        [TestCase(4)]
-        [TestCase(5)]
-        public void Constructor_SizeIsOneOrMore_ShipHealthIsEqualToSize(int size)
+        [TestCase(ShipSize.Destroyer)]
+        [TestCase(ShipSize.Battleship)]
+        public void ShipSizePassedToConstructor_ShipHealthAndSizeEqualToShipSize(ShipSize shipSize)
         {
-            var ship = new Ship(size);
+            // Act
+            var ship = new Ship(shipSize);
 
-            Assert.That(ship.Health, Is.EqualTo(size));
+            // Assert
+            Assert.That(ship.Health, Is.EqualTo((int)shipSize));
+            Assert.That(ship.Size, Is.EqualTo((int)shipSize));
         }
     }
 }
-

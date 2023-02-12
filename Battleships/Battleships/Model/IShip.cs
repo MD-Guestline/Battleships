@@ -1,10 +1,10 @@
-﻿using System;
-namespace Battleships.Model
+﻿namespace Battleships.Model
 {
 	public interface IShip
 	{
-		void Hit();
+        int Size { get; }
+
+        void Hit();
 		bool IsSunk(); 
 	}
 }
-
