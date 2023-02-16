@@ -23,12 +23,18 @@
     <None Remove="Model\GridSquareTests\" />
     <None Remove="Moq" />
     <None Remove="Model\GridTests\" />
+    <None Remove="Factories\" />
+    <None Remove="Factories\ShipPlacementFactoryTests\" />
+    <None Remove="GameTests\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Model\ShipTests\" />
     <Folder Include="Model\GridSquareTests\" />
     <Folder Include="Model\GridTests\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Factories\ShipPlacementFactoryTests\" />
+    <Folder Include="GameTests\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Battleships\Battleships.csproj" />
