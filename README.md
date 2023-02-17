@@ -1,6 +1,6 @@
-## Battleship Game
+## Battleships Game
 
-This is a simple one-sided battleship game console application built with C\# and .NET 7.0. The game randomly places three ships (a Battleship of size 5, and two Destroyers of size 4) on a 10 x 10 grid. The player then takes turns shooting at coordinates (by entering coordinates of the form A5, where A is the column and 5 is the row). Each shot either results in a hit, a miss, or a sink. The game ends when all the placed ships have been sunk.
+This is a simple one-sided Battleships game console application built with C\# and .NET 7.0. The game randomly places three ships (a Battleship of size 5, and two Destroyers of size 4) on a 10 x 10 grid. The player then takes turns shooting at coordinates (by entering coordinates of the form A5, where A is the column and 5 is the row). Each shot either results in a hit, a miss, or a sink. The game ends when all the placed ships have been sunk.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ For more information, see [Install the .NET SDK with Visual Studio.](https://lea
 ## Building and Running
 
 1. Clone the repository
-2. Open the solution file (`Battleship.sln`) in Visual Studio.
+2. Open the solution file (`Battleships.sln`) in Visual Studio.
 3. Build the solution.
 4. Run the `Battleships` project.
 
@@ -21,7 +21,7 @@ For more information, see [Install the .NET SDK with Visual Studio.](https://lea
 
 This project uses [NUnit](https://nunit.org/) for unit testing and [Moq](https://github.com/moq/moq4) for mocking.
 
-1. Open the solution file (`Battleship.sln`) in Visual Studio.
+1. Open the solution file (`Battleships.sln`) in Visual Studio.
 2. Build the solution.
 3. In Visual Studio, go to Test > Run All Tests.
 
