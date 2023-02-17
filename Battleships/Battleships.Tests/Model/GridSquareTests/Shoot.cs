@@ -3,8 +3,8 @@
 namespace Battleships.Tests.Model.GridSquareTests
 {
     [TestFixture]
-	public class Shoot
-	{
+    public class Shoot
+    {
         [Test]
         public void IsAlreadyShot_ThrowsInvalidOperationException()
         {
@@ -22,19 +22,19 @@ namespace Battleships.Tests.Model.GridSquareTests
         }
 
         [Test]
-		public void IsNotShot_BecomesShot()
-		{
+        public void IsNotShot_BecomesShot()
+        {
             // Arrange
-			var gridSquare = new GridSquare();
+            var gridSquare = new GridSquare();
             var shotBefore = gridSquare.IsShot;
 
             // Act
-			gridSquare.Shoot();
+            gridSquare.Shoot();
 
             // Assert
             Assert.That(shotBefore, Is.False);
-			Assert.That(gridSquare.IsShot, Is.True);
-		}
+            Assert.That(gridSquare.IsShot, Is.True);
+        }
 
         [Test]
         public void IsNotShotAndHasAShip_HitsShip()

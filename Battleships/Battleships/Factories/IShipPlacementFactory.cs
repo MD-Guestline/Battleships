@@ -2,8 +2,8 @@
 
 namespace Battleships.Factories
 {
-	public interface IShipPlacementFactory
-	{
-		ShipPlacement CreateRandom(IShip ship);
-	}
+    public interface IShipPlacementFactory
+    {
+        ShipPlacement CreateRandom(IShip ship);
+    }
 }

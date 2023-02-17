@@ -3,11 +3,11 @@
 namespace Battleships.Tests.Model.GridTests
 {
     [TestFixture]
-	public class PlaceShip
-	{
-		[Test]
-		public void CannotPlaceShip_ThrowsArgumentException()
-		{
+    public class PlaceShip
+    {
+        [Test]
+        public void CannotPlaceShip_ThrowsArgumentException()
+        {
             // Arrange
             var grid = new Grid();
             var ship = new Ship(ShipSize.Battleship);

@@ -3,11 +3,11 @@
 namespace Battleships.Tests.Model.ShipTests
 {
     [TestFixture]
-	public class IsSunk
-	{
-		[Test]
-		public void HealthIsZero_ReturnsTrue()
-		{
+    public class IsSunk
+    {
+        [Test]
+        public void HealthIsZero_ReturnsTrue()
+        {
             // Arrange
             var ship = new Ship(ShipSize.Destroyer);
             for (var i = (int)ShipSize.Destroyer; i > 0; i--)
@@ -19,9 +19,9 @@ namespace Battleships.Tests.Model.ShipTests
             var result = ship.IsSunk();
 
             // Assert
-			Assert.That(ship.Health, Is.EqualTo(0));
-			Assert.That(result, Is.True);
-		}
+            Assert.That(ship.Health, Is.EqualTo(0));
+            Assert.That(result, Is.True);
+        }
 
         [TestCase(1)]
         [TestCase(2)]

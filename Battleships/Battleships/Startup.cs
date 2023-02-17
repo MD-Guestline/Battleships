@@ -16,7 +16,7 @@ namespace Battleships
             services.AddScoped<IGameView, GameView>();
             services.AddSingleton<IShipPlacementFactory, ShipPlacementFactory>();
             services.AddSingleton<IRandomGenerator, RandomGenerator>();
-            
+
             return services;
         }
     }

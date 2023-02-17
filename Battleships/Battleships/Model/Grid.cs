@@ -1,13 +1,13 @@
 ﻿namespace Battleships.Model
 {
     public class Grid : IGrid
-	{
+    {
         public const int Size = 10;
-		private readonly GridSquare[,] _gridSquares = new GridSquare[Size, Size];
+        private readonly GridSquare[,] _gridSquares = new GridSquare[Size, Size];
         private readonly List<IShip> _placedShips = new List<IShip>();
 
         public Grid()
-		{
+        {
             for (var rowIndex = 0; rowIndex < Size; rowIndex++)
             {
                 for (var columnIndex = 0; columnIndex < Size; columnIndex++)
@@ -18,7 +18,7 @@
         }
 
         public void ShootSquare(int columnIndex, int rowIndex)
-		{
+        {
             if (columnIndex < 0 || columnIndex >= Size)
             {
                 throw new ArgumentOutOfRangeException(nameof(columnIndex));

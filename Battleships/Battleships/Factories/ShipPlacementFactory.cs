@@ -3,7 +3,7 @@
 namespace Battleships.Factories
 {
     public class ShipPlacementFactory : IShipPlacementFactory
-	{
+    {
         private readonly IRandomGenerator _random;
 
         public ShipPlacementFactory(IRandomGenerator random)
@@ -27,7 +27,7 @@ namespace Battleships.Factories
                 startColumn = _random.NextNumber(0, Grid.Size);
                 startRow = _random.NextNumber(0, Grid.Size - ship.Size + 1);
             }
-            
+
             return new ShipPlacement(orientation, startColumn, startRow);
         }
     }

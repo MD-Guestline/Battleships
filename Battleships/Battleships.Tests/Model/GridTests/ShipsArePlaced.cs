@@ -3,8 +3,8 @@
 namespace Battleships.Tests.Model.GridTests
 {
     [TestFixture]
-	public class ShipsArePlaced
-	{
+    public class ShipsArePlaced
+    {
         [Test]
         public void NoShipsHaveBeenPlaced_ReturnsFalse()
         {

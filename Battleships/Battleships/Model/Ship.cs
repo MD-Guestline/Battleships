@@ -1,29 +1,29 @@
 ﻿namespace Battleships.Model
 {
-	public class Ship : IShip
-	{
-		public int Size { get; private set; }
-		public int Health { get; private set; }
+    public class Ship : IShip
+    {
+        public int Size { get; private set; }
+        public int Health { get; private set; }
 
-		public Ship(ShipSize size)
-		{
-			Size = (int)size;
-			Health = (int)size;
-		}
+        public Ship(ShipSize size)
+        {
+            Size = (int)size;
+            Health = (int)size;
+        }
 
-		public void Hit()
-		{
-			if (Health == 0)
-			{
-				return;
-			}
+        public void Hit()
+        {
+            if (Health == 0)
+            {
+                return;
+            }
 
-			Health--;
-		}
+            Health--;
+        }
 
-		public bool IsSunk()
-		{
-			return Health == 0;
-		}
-	}
+        public bool IsSunk()
+        {
+            return Health == 0;
+        }
+    }
 }

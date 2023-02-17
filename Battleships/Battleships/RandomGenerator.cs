@@ -3,13 +3,13 @@
 namespace Battleships
 {
     public class RandomGenerator : IRandomGenerator
-	{
+    {
         private readonly Random _random;
 
-		public RandomGenerator()
-		{
+        public RandomGenerator()
+        {
             _random = new Random();
-		}
+        }
 
         public Orientation NextOrientation()
         {

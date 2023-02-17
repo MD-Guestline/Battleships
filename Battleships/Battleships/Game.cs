@@ -6,17 +6,17 @@ using Battleships.View;
 namespace Battleships
 {
     public class Game
-	{
+    {
         private readonly IGrid _grid;
-		private readonly IGameView _gameView;
+        private readonly IGameView _gameView;
         private readonly IShipPlacementFactory _shipPlacementFactory;
 
-		public Game(IGrid grid, IGameView gameView, IShipPlacementFactory shipPlacementFactory)
-		{
-			_grid = grid;
-			_gameView = gameView;
+        public Game(IGrid grid, IGameView gameView, IShipPlacementFactory shipPlacementFactory)
+        {
+            _grid = grid;
+            _gameView = gameView;
             _shipPlacementFactory = shipPlacementFactory;
-		}
+        }
 
         public void Start()
         {
@@ -67,7 +67,8 @@ namespace Battleships
 
         public void End()
         {
-            if (IsOver()) {
+            if (IsOver())
+            {
                 _gameView.DisplayGameOverMessage();
             }
         }

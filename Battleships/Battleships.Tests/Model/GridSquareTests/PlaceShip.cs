@@ -3,8 +3,8 @@
 namespace Battleships.Tests.Model.GridSquareTests
 {
     [TestFixture]
-	public class PlaceShip
-	{
+    public class PlaceShip
+    {
         [Test]
         public void ShipAlreadyPlaced_ThrowsInvalidOperationException()
         {
@@ -13,7 +13,7 @@ namespace Battleships.Tests.Model.GridSquareTests
             var existingShip = new Ship(ShipSize.Destroyer);
             var newShip = new Ship(ShipSize.Battleship);
             gridSquare.PlaceShip(existingShip);
-            
+
             // Act
             void result() => gridSquare.PlaceShip(newShip);
 
@@ -22,10 +22,10 @@ namespace Battleships.Tests.Model.GridSquareTests
         }
 
         [Test]
-		public void HasNoShip_PlacesShip()
-		{
+        public void HasNoShip_PlacesShip()
+        {
             // Arrange
-			var gridSquare = new GridSquare();
+            var gridSquare = new GridSquare();
             var newShip = new Ship(ShipSize.Battleship);
             var gridSquareShipBeforePlacing = gridSquare.Ship;
 
@@ -34,7 +34,7 @@ namespace Battleships.Tests.Model.GridSquareTests
 
             // Assert
             Assert.That(gridSquareShipBeforePlacing, Is.Null);
-			Assert.That(gridSquare.Ship, Is.EqualTo(newShip));
-		}
+            Assert.That(gridSquare.Ship, Is.EqualTo(newShip));
+        }
     }
 }

@@ -1,8 +1,7 @@
-﻿using System;
-namespace Battleships.Model
+﻿namespace Battleships.Model
 {
-	public interface IGrid
-	{
+    public interface IGrid
+    {
         const int Size = 10;
 
         void ShootSquare(int columnIndex, int rowIndex);
@@ -13,4 +12,3 @@ namespace Battleships.Model
         bool AllShipsAreSunk();
     }
 }
-

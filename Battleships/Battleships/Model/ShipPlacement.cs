@@ -1,8 +1,8 @@
 ﻿namespace Battleships.Model
 {
     public class ShipPlacement
-	{
-		public Orientation Orientation { get; set; }
+    {
+        public Orientation Orientation { get; set; }
         public int StartColumn { get; set; }
         public int StartRow { get; set; }
 

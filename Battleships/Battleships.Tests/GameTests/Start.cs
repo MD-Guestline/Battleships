@@ -6,8 +6,8 @@ using Moq;
 namespace Battleships.Tests.GameTests
 {
     [TestFixture]
-	public class Start
-	{
+    public class Start
+    {
         private Mock<IGrid> _grid;
         private Mock<IGameView> _gameView;
         private Mock<IShipPlacementFactory> _shipPlacementFactory;

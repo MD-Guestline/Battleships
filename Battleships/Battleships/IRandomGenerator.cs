@@ -2,9 +2,9 @@
 
 namespace Battleships
 {
-	public interface IRandomGenerator
-	{
-		Orientation NextOrientation();
-		int NextNumber(int minValue, int maxValue);
-	}
+    public interface IRandomGenerator
+    {
+        Orientation NextOrientation();
+        int NextNumber(int minValue, int maxValue);
+    }
 }

@@ -3,7 +3,7 @@
 namespace Battleships.View
 {
     public class GameView : IGameView
-	{
+    {
         public void DisplayGrid(IGrid grid)
         {
             Console.Clear();

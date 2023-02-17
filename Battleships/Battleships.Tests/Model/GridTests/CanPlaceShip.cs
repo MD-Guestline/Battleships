@@ -4,7 +4,7 @@ namespace Battleships.Tests.Model.GridTests
 {
     [TestFixture]
     public class CanPlaceShip
-	{
+    {
         [TestCase(-1, 0)]
         [TestCase(10, 0)]
         [TestCase(0, -1)]

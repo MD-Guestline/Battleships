@@ -4,8 +4,8 @@ using Moq;
 namespace Battleships.Tests.Model.GridTests
 {
     [TestFixture]
-	public class AllShipsAreSunk
-	{
+    public class AllShipsAreSunk
+    {
         [Test]
         public void NoShipsHaveBeenPlaced_ReturnsTrue()
         {

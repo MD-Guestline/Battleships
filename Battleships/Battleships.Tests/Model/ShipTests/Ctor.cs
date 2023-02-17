@@ -3,8 +3,8 @@
 namespace Battleships.Tests.Model.ShipTests
 {
     [TestFixture]
-	public class Ctor
-	{
+    public class Ctor
+    {
         [TestCase(ShipSize.Destroyer)]
         [TestCase(ShipSize.Battleship)]
         public void ShipSizePassedToConstructor_ShipHealthAndSizeEqualToShipSize(ShipSize shipSize)

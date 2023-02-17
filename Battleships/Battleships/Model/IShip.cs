@@ -1,10 +1,10 @@
 ﻿namespace Battleships.Model
 {
-	public interface IShip
-	{
+    public interface IShip
+    {
         int Size { get; }
 
         void Hit();
-		bool IsSunk(); 
-	}
+        bool IsSunk();
+    }
 }
